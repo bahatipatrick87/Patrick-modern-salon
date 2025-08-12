@@ -1,0 +1,142 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  color: #ff6347;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Home */
+.home {
+  text-align: center;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Services */
+.services ul {
+  list-style: none;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  box-shadow: 0 0 12px #ff6347;
+}
+
+/* Booking */
+.booking {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Appointment Form */
+.appointment-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appointment-form label {
+  font-weight: 600;
+}
+
+.appointment-form input,
+.appointment-form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.appointment-form button {
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #e5533d;
+}
